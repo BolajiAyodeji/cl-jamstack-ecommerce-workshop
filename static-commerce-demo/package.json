@@ -1,0 +1,45 @@
+{
+    "name": "CL Static Commerce Demo",
+    "version": "1.0.0",
+    "description": "",
+    "main": "./dist/commercelayer.min.js",
+    "scripts": {
+        "start": "rm -rf ./dist && webpack --progress --watch --mode=development",
+        "start:dev": "webpack-dev-server",
+        "build": "rm -rf ./dist && webpack --progress"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/BolajiAyodeji/cl-jamstack-ecommerce-workshop.git"
+    },
+    "keywords": [
+        "commerce layer",
+        "jamstack",
+        "headless",
+        "ecommerce",
+        "api"
+    ],
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/BolajiAyodeji/cl-jamstack-ecommerce-workshop/issues"
+    },
+    "homepage": "https://github.com/BolajiAyodeji/cl-jamstack-ecommerce-workshop#readme",
+    "dependencies": {
+        "@commercelayer/js-auth": "^2.0.2",
+        "@commercelayer/js-sdk": "^2.14.3",
+        "js-cookie": "^2.2.1",
+        "lodash": "^4.17.20"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.11.6",
+        "@babel/plugin-proposal-object-rest-spread": "^7.11.0",
+        "@babel/plugin-transform-runtime": "^7.11.5",
+        "@babel/preset-env": "^7.11.5",
+        "babel-loader": "^8.1.0",
+        "clean-webpack-plugin": "^3.0.0",
+        "html-webpack-plugin": "^4.5.0",
+        "webpack": "^4.44.2",
+        "webpack-cli": "^3.3.12",
+        "webpack-dev-server": "^3.11.0"
+    }
+}

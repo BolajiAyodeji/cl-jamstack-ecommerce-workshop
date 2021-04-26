@@ -1,0 +1,24 @@
+.box {
+  width: 55%;
+}
+.compare-at-amount {
+  text-decoration: line-through;
+}
+td > img {
+  width: 50px;
+}
+.clayer-availability-message-container {
+  padding: 10px 0;
+}
+#clayer-shopping-bag-container {
+  display: none;
+}
+#clayer-shopping-bag-container.open {
+  display: block;
+}
+.clayer-add-to-bag {
+  margin-top: 50px;
+}
+.clayer-add-to-bag-quantity {
+  width: 100px;
+}
