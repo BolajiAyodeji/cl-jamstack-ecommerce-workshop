@@ -1,4 +1,5 @@
 const clayerConfig = document.querySelector("#clayer-config");
+
 let config = {
   baseUrl: "",
   clientId: "",
@@ -15,6 +16,7 @@ let config = {
     trace: "",
   },
 };
+
 if (clayerConfig) {
   config = {
     baseUrl: clayerConfig.getAttribute("data-base-url"),
@@ -33,4 +35,5 @@ if (clayerConfig) {
     },
   };
 }
+
 export default config;

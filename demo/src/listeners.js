@@ -3,8 +3,9 @@ import { getOrderToken } from "./utils";
 import {
   displayUnavailableMessage,
   toggleShoppingBag,
-  openShoppingBag,
+  openShoppingBag
 } from "./ui";
+
 export default {
   setupVariants: () => {
     const variantSelects = document.querySelectorAll(".clayer-variant-select");

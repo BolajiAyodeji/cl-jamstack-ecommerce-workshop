@@ -15,7 +15,6 @@ import {
 import { getInventoryFirstAvailableLevel, getElementFromTemplate } from "utils";
 import { hideElement } from "./helpers";
 
-
 export const updatePrice = (sku, priceContainerId) => {
   const price = _.first(sku.prices().toArray());
   const priceContainer = document.querySelector(`#${priceContainerId}`);

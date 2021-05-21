@@ -25,7 +25,6 @@ import {
   clearShoppingBag,
 } from "./ui";
 import * as _ from 'lodash'
-// const clsdk = require('@commercelayer/sdk')
 
 const getPrices = () => {
   const prices = document.querySelectorAll(".clayer-price");
