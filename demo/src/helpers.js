@@ -1,4 +1,3 @@
-export const itemsPerPage = 25;
 export const enableElement = (element) => {
     if (element) {
         element.removeAttribute('disabled');

@@ -90,7 +90,6 @@ export const updateAddVariantQuantitySKU = (
   skuId,
   skuName,
   skuCode,
-  skuImageUrl,
   skuMaxQuantity,
   addToBagQuantityId
 ) => {
@@ -204,7 +203,6 @@ export const updateAddToBagSKU = (
   skuId,
   skuName,
   skuCode,
-  skuImageUrl,
   addToBagId,
   addToBagQuantityId
 ) => {

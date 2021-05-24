@@ -1,6 +1,5 @@
 import config from "./config";
 import { Sku, Order, LineItem } from "@commercelayer/js-sdk";
-import { itemsPerPage } from "./helpers";
 import { updateShoppingBagSummary, updateShoppingBagCheckout } from "./ui";
 import {
   setOrderToken,
@@ -37,17 +36,9 @@ const getPrices = () => {
     });
     Sku.where({ codeIn: skuCodes.join(",") })
       .includes("prices")
-      .perPage(itemsPerPage)
       .all()
       .then(async (r) => {
         updatePrices(r.toArray());
-        let nextP = r;
-        if (nextP.hasNextPage()) {
-          for (let index = 1; index < nextP.pageCount(); index++) {
-            nextP = await nextP.nextPage();
-            updatePrices(nextP.toArray());
-          }
-        }
         document.dispatchEvent(new Event("clayer-prices-ready"));
         if (r.empty()) {
           document.dispatchEvent(new Event("clayer-skus-empty"));
@@ -65,7 +56,6 @@ const getVariants = () => {
       }
     });
     Sku.where({ codeIn: skuCodes.join(",") })
-      .perPage(itemsPerPage)
       .all()
       .then((r) => {
         updateVariants(r.toArray(), true);
@@ -99,7 +89,6 @@ const getVariantsQuantity = () => {
       return null;
     }
     Sku.where({ codeIn: skuCodes.join(",") })
-      .perPage(itemsPerPage)
       .all()
       .then((r) => {
         updateVariantsQuantity(r.toArray());
@@ -126,7 +115,6 @@ const getAddToBags = () => {
       return null;
     }
     Sku.where({ codeIn: skuCodes.join(",") })
-      .perPage(itemsPerPage)
       .all()
       .then((r) => {
         updateAddToBags(r.toArray());
@@ -155,7 +143,6 @@ const selectSku = (
   addToBagQuantityId
 ) => {
   Sku.includes("prices")
-    .perPage(itemsPerPage)
     .find(skuId)
     .then((s) => {
       updatePrice(s, priceContainerId);

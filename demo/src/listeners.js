@@ -17,7 +17,6 @@ export default {
           selectedOption.value,
           selectedOption.dataset.skuName,
           selectedOption.dataset.skuCode,
-          selectedOption.dataset.skuImageUrl,
           target.dataset.priceContainerId,
           target.dataset.availabilityMessageContainerId,
           target.dataset.addToBagId,
@@ -32,7 +31,6 @@ export default {
           variantRadio.value,
           variantRadio.dataset.skuName,
           variantRadio.dataset.skuCode,
-          variantRadio.dataset.skuImageUrl,
           variantRadio.dataset.priceContainerId,
           variantRadio.dataset.availabilityMessageContainerId,
           variantRadio.dataset.addToBagId,
@@ -87,7 +85,6 @@ export default {
               addToBag.dataset.skuId,
               addToBag.dataset.skuName,
               addToBag.dataset.skuCode,
-              addToBag.dataset.skuImageUrl,
               quantity
             )
             .then(() => {

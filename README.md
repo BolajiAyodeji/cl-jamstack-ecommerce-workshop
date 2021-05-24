@@ -115,7 +115,7 @@ We'll add more files as we proceed 😉.
 
 ## Setup webpack
 
-We would be having multiple JavaScript files with modules and all. So we need to compile them all into one minified JS file we can drop into our index HTML file.
+We would be having multiple JavaScript files with modules and all. So we need to compile them all into one minified JS file we can drop into our `index.html` file.
 
 To do this, we need to setup webpack, babel and some plugins (which you've installed already from the previous step). Kindly create a `webpack.config.js` file which will contain the configuration and paste the code below:
 
@@ -345,6 +345,35 @@ export default config;
 </details>
 
 <details>
+<summary>Add some custom CSS for extra styling</summary>
+
+```css
+.box {
+  width: 55%;
+}
+.compare-at-amount {
+  text-decoration: line-through;
+}
+.clayer-availability-message-container {
+  padding: 10px 0;
+}
+#clayer-shopping-bag-container {
+  display: none;
+}
+#clayer-shopping-bag-container.open {
+  display: block;
+}
+.clayer-add-to-bag {
+  margin-top: 50px;
+}
+.clayer-add-to-bag-quantity {
+  width: 100px;
+}
+```
+
+</details>
+
+<details>
 <summary>Title and product image</summary>
 
 ```html
@@ -568,6 +597,19 @@ export default config;
 
 </details>
 
+## [Commerce Layer JavaScript Auth](https://github.com/commercelayer/commercelayer-js-auth)
+
+  1. Fetch Commerce Layer API credentials
+  2. Installation
+  3. Client credentials integration
+
+## [Commerce Layer JavaScript SDK](https://github.com/commercelayer/commercelayer-js-sdk)
+
+  1. Installation
+  2. Authentication
+  3. Import
+  4. Usage overview
+
 ## Get Prices
 
 ## Get Variants
@@ -578,48 +620,27 @@ export default config;
 
 ## Place Order
 
-Create Order
-Get Order
-Refresh Order
-Create Line Item
-Update Line Item
-Delete Line Item
-Add Variant Quantity
-
 ## Shopping Bag
-
-
-## [Commerce Layer JavaScript Auth](https://github.com/commercelayer/commercelayer-js-auth)
-
-    1. Fetch Commerce Layer API credentials
-    2. Installation
-    3. Client credentials integration
-
-## [Commerce Layer JavaScript SDK](https://github.com/commercelayer/commercelayer-js-sdk)
-
-    1. Installation
-    2. Authentication
-    3. Import
-    4. Usage overview
-
-##
-
-    3. API.JS
-    5. LISTENERS.JS
-    7. UTIL.JS
-    6. UI.JS
-    4. HELPERS.JS
 
 ## CI/CD and Netlify deployment
 
+1. Deploy the final application to GitHub
+2. Deploy to Netlify using GitHub
+3. xxx
+
 ## Conclusion
 
-1. Summary and what next
-2. Commerce Layer Sanity Starter (or other starters available)
-3. Useful resources
-   - [Commerce Layer Checkout](https://github.com/commercelayer/commercelayer-checkout)
-   - [Commerce Layer Developer Resources](https://commercelayer.io/developers)
-   - [Commerce Layer Comprehensive Guide to Headless Commerce](https://commercelayer.io/guides/headless-commerce)
-   - [Commerce Layer Core Concepts](https://commercelayer.io/docs/core-concepts)
-   - [Commerce Layer Data Model](https://commercelayer.io/docs/data-model)
-   - [Commerce Layer Open Source Projects](https://github.com/commercelayer)
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+We developed an [open source checkout application](). It can be used as is or as a reference in case you need to develop a custom checkout experience through the API, to fully match your branding requirements or your clients' ones.
+
+If you're looking to build global ecommerce web experiences, you should also check out the [Commerce Layer Sanity Starter](https://www.sanity.io/create?template=commercelayer/sanity-template-commercelayer) – a multi-country ecommerce starter built with Sanity Studio, Commerce Layer, Next.js, and deployed to Netlify. You can also [contribute](https://github.com/commercelayer/sanity-template-commercelayer) to the development of the starter.
+
+## Useful resources
+
+- [Commerce Layer Developer Resources](https://commercelayer.io/developers)
+- [Commerce Layer Comprehensive Guide to Headless Commerce](https://commercelayer.io/guides/headless-commerce)
+- [Commerce Layer Checkout](https://github.com/commercelayer/commercelayer-checkout)
+- [Commerce Layer Core Concepts](https://commercelayer.io/docs/core-concepts)
+- [Commerce Layer Data Model](https://commercelayer.io/docs/data-model)
+- [Commerce Layer Open Source Projects](https://github.com/commercelayer)
