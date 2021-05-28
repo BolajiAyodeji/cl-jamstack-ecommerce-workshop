@@ -77,6 +77,8 @@ Learn more 👉🏾 https://commercelayer.io/why
 
 We'll transform a plain HTML page into an enterprise-grade static commerce website with static content, HTML5, CSS, and Javascript. Finally, we will integrate Commerce Layer for headless commerce capabilities and deploy our application to Netlify using the CLI.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4f848b77-e168-4203-800c-a695d947543c/deploy-status)](https://app.netlify.com/sites/static-ecommerce-store/deploys)
+
 GIF here
 
 ![](./assets/xxx)
@@ -390,7 +392,7 @@ export default config;
 <summary>Title and product image</summary>
 
 ```html
-<h1 class="title">Commerce Layer Swag Store</h1>
+<h1 class="title">Commerce LayercStore</h1>
 
 <div class="columns">
   <div class="column">
@@ -448,6 +450,7 @@ export default config;
       class="clayer-variant"
       data-sku-code="SWEETHMUB7B7B7000000MXXX"
       data-sku-name="Sport Grey Unisex Hoodie Sweatshirt with Black Logo (M)"
+      data-sku-image-url="https://img.commercelayer.io/skus/SWEETHMUB7B7B7000000.png?fm=jpg&q=90"
       value=""
     >
       Medium
@@ -456,6 +459,7 @@ export default config;
       class="clayer-variant"
       data-sku-code="SWEETHMUB7B7B7000000LXXX"
       data-sku-name="Sport Grey Unisex Hoodie Sweatshirt with Black Logo (L)"
+      data-sku-image-url="https://img.commercelayer.io/skus/SWEETHMUB7B7B7000000.png?fm=jpg&q=90"
       value=""
     >
       Large
@@ -464,6 +468,7 @@ export default config;
       class="clayer-variant"
       data-sku-code="SWEETHMUB7B7B7000000XLXX"
       data-sku-name="Sport Grey Unisex Hoodie Sweatshirt with Black Logo (XL)"
+      data-sku-image-url="https://img.commercelayer.io/skus/SWEETHMUB7B7B7000000.png?fm=jpg&q=90"
       value=""
     >
       Extra Large
@@ -494,6 +499,7 @@ export default config;
     id="availability-message"
   ></div>
 </div>
+
 ```
 
 </details>
@@ -542,6 +548,7 @@ export default config;
   <table class="table is-fullwidth">
     <thead>
       <tr>
+        <th>SKU Image</th>
         <th colspan="2">SKU</th>
         <th>Unit price</th>
         <th>Q.ty</th>
@@ -672,7 +679,9 @@ import {
 
 ## Integrating Commerce Layer
 
-Now let's integrate Commerce Layer into our static product apage for headless commerce capabilities. TBA in the live workshop.
+An order can consist of a customer, line items (SKUs, cost of shipping method, cost of payment method, taxes, or gift cards), a billing address, a shipping address, discount(s) calculated from active promotions, redeemed gift card(s), a payment method, and a payment source type. You should [read this guide](https://commercelayer.io/docs/data-model/anatomy-of-an-order) to learn more about the anatomy of an order.
+
+Now let's integrate Commerce Layer into our static product page for headless commerce capabilities. Details and live coding to be done in the live workshop.
 
 ## Continous Deployment on Netlify
 
@@ -728,3 +737,5 @@ We developed an [open source checkout application](https://github.com/commercela
 - [Commerce Layer Data Model](https://commercelayer.io/docs/data-model)
 - [Commerce Layer React components](https://github.com/commercelayer/commercelayer-react-components)
 - [Commerce Layer Open Source Projects](https://github.com/commercelayer)
+- [Using data attributes](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes)
+- [HTMLOrForeignElement.dataset](https://developer.mozilla.org/en-US/docs/Web/API/HTMLOrForeignElement/dataset)

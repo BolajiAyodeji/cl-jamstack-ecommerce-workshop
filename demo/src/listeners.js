@@ -17,24 +17,11 @@ export default {
           selectedOption.value,
           selectedOption.dataset.skuName,
           selectedOption.dataset.skuCode,
+          selectedOption.dataset.skuImageUrl,
           target.dataset.priceContainerId,
           target.dataset.availabilityMessageContainerId,
           target.dataset.addToBagId,
           target.dataset.addToBagQuantityId
-        );
-      });
-    });
-    const variantRadios = document.querySelectorAll(".clayer-variant-radio");
-    variantRadios.forEach((variantRadio) => {
-      variantRadio.addEventListener("click", () => {
-        api.selectSku(
-          variantRadio.value,
-          variantRadio.dataset.skuName,
-          variantRadio.dataset.skuCode,
-          variantRadio.dataset.priceContainerId,
-          variantRadio.dataset.availabilityMessageContainerId,
-          variantRadio.dataset.addToBagId,
-          variantRadio.dataset.addToBagQuantityId
         );
       });
     });
@@ -85,6 +72,7 @@ export default {
               addToBag.dataset.skuId,
               addToBag.dataset.skuName,
               addToBag.dataset.skuCode,
+              addToBag.dataset.skuImageUrl,
               quantity
             )
             .then(() => {

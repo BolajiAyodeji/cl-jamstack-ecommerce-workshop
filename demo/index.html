@@ -1,163 +1,248 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>CL Static Commerce Demo</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
-    <link rel="stylesheet" href="./css/custom.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <link rel="icon" href="https://data.commercelayer.app/assets/images/favicons/favicon.ico"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./css/custom.css" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
+    <link
+      rel="icon"
+      href="https://data.commercelayer.app/assets/images/favicons/favicon.ico"
+    />
   </head>
   <body>
-  <section class="section">
-    <div class="container">
-      <h1 class="title">
-        Commerce Layer Swag Store
-      </h1>
+    <section class="section">
+      <div class="container">
+        <h1 class="title">Commerce Layer Store</h1>
 
-      <div class="columns">
-        <div class="column">
-          <div class="box">
-            <img src="https://img.commercelayer.io/skus/SWEETHMUB7B7B7000000.png?fm=jpg&q=90" />
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="content">
-            <h4 class="title">Sport Grey Unisex Hoodie Sweatshirt with Black Logo</h4>
-            <p class="help">SWEETHMUB7B7B7000000</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pellentesque in neque vitae tincidunt. In gravida eu ipsum non condimentum. Curabitur libero leo, gravida a dictum vestibulum, sollicitudin vel quam.</p>
-            <div class="clayer-price" data-sku-code="SWEETHMUB7B7B7000000">
-              <span class="amount"></span>
-              <span class="compare-at-amount"></span>
+        <div class="columns">
+          <div class="column">
+            <div class="box">
+              <img
+                src="https://img.commercelayer.io/skus/SWEETHMUB7B7B7000000.png?fm=jpg&q=90"
+              />
             </div>
           </div>
 
-          <!-- Variants (select) -->
-          <div class="select"> <!-- Only for styling -->
-            <select class="clayer-variant-select" name="variant" data-availability-message-container-id="availability-message" data-add-to-bag-id="add-to-bag" data-add-to-bag-quantity-id="add-to-bag-quantity">
-              <option value="" disabled selected>Select variant</option>
-              <option class="clayer-variant" data-sku-code="SWEETHMUB7B7B7000000MXXX" data-sku-name="Sport Grey Unisex Hoodie Sweatshirt with Black Logo (M)" value=''>Medium</option>
-              <option class="clayer-variant" data-sku-code="SWEETHMUB7B7B7000000LXXX" data-sku-name="Sport Grey Unisex Hoodie Sweatshirt with Black Logo (L)" value=''>Large</option>
-              <option class="clayer-variant" data-sku-code="SWEETHMUB7B7B7000000XLXX" data-sku-name="Sport Grey Unisex Hoodie Sweatshirt with Black Logo (XL)" value=''>Extra Large</option>
-            </select>
+          <div class="column">
+            <div class="content">
+              <h4 class="title">
+                Sport Grey Unisex Hoodie Sweatshirt with Black Logo
+              </h4>
+              <p class="help">SWEETHMUB7B7B7000000</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                pellentesque in neque vitae tincidunt. In gravida eu ipsum non
+                condimentum. Curabitur libero leo, gravida a dictum vestibulum,
+                sollicitudin vel quam.
+              </p>
+              <div class="clayer-price" data-sku-code="SWEETHMUB7B7B7000000">
+                <span class="amount"></span>
+                <span class="compare-at-amount"></span>
+              </div>
+            </div>
+
+            <!-- Variants (select) -->
+            <div class="select">
+              <!-- Only for styling -->
+              <select
+                class="clayer-variant-select"
+                name="variant"
+                data-availability-message-container-id="availability-message"
+                data-add-to-bag-id="add-to-bag"
+                data-add-to-bag-quantity-id="add-to-bag-quantity"
+              >
+                <option value="" disabled selected>Select variant</option>
+                <option
+                  class="clayer-variant"
+                  data-sku-code="SWEETHMUB7B7B7000000MXXX"
+                  data-sku-name="Sport Grey Unisex Hoodie Sweatshirt with Black Logo (M)"
+                  data-sku-image-url="https://img.commercelayer.io/skus/SWEETHMUB7B7B7000000.png?fm=jpg&q=90"
+                  value=""
+                >
+                  Medium
+                </option>
+                <option
+                  class="clayer-variant"
+                  data-sku-code="SWEETHMUB7B7B7000000LXXX"
+                  data-sku-name="Sport Grey Unisex Hoodie Sweatshirt with Black Logo (L)"
+                  data-sku-image-url="https://img.commercelayer.io/skus/SWEETHMUB7B7B7000000.png?fm=jpg&q=90"
+                  value=""
+                >
+                  Large
+                </option>
+                <option
+                  class="clayer-variant"
+                  data-sku-code="SWEETHMUB7B7B7000000XLXX"
+                  data-sku-name="Sport Grey Unisex Hoodie Sweatshirt with Black Logo (XL)"
+                  data-sku-image-url="https://img.commercelayer.io/skus/SWEETHMUB7B7B7000000.png?fm=jpg&q=90"
+                  value=""
+                >
+                  Extra Large
+                </option>
+              </select>
+            </div>
+
+            <!-- Add to bag quantity -->
+            <input
+              id="add-to-bag-quantity"
+              type="number"
+              min="1"
+              max="25"
+              class="input clayer-add-to-bag-quantity"
+            />
+
+            <!-- Add to bag -->
+            <a
+              href="#"
+              class="button is-fullwidth clayer-add-to-bag"
+              id="add-to-bag"
+              data-availability-message-container-id="availability-message"
+              >Add to bag</a
+            >
+
+            <div
+              class="clayer-availability-message-container"
+              id="availability-message"
+            ></div>
           </div>
+        </div>
 
-          <!-- Add to bag quantity -->
-          <input id="add-to-bag-quantity" type="number" min="1" max="25" class="input clayer-add-to-bag-quantity">
+        <!-- Availability message templates -->
 
-          <!-- Add to bag -->
-          <a href="#" class="button is-fullwidth clayer-add-to-bag" id="add-to-bag"
-                      data-availability-message-container-id="availability-message">Add to bag</a>
+        <template id="clayer-availability-message-available-template">
+          <p>
+            Available in
+            <span class="clayer-availability-message-available-min-days"></span
+            >-
+            <span class="clayer-availability-message-available-max-days"></span>
+            days with
+            <span
+              class="clayer-availability-message-available-shipping-method-name"
+            ></span>
+            (<span
+              class="
+                clayer-availability-message-available-shipping-method-price
+              "
+            ></span
+            >)
+          </p>
+        </template>
+        <template id="clayer-availability-message-unavailable-template">
+          <p class="has-text-danger">The selected SKU is not available.</p>
+        </template>
 
-          <div class="clayer-availability-message-container" id="availability-message"></div>
+        <!-- Shopping bag -->
+
+        <h2 class="title">Shopping bag</h2>
+        <p class="subtitle">
+          Your shopping bag contains
+          <b><span class="clayer-shopping-bag-items-count">0</span></b> item(s)
+          worth <b><span class="clayer-shopping-bag-total"></span></b>
+          <a href="#" class="clayer-shopping-bag-toggle">toggle</a>
+        </p>
+
+        <div id="clayer-shopping-bag-container">
+          <table class="table is-fullwidth">
+            <thead>
+              <tr>
+                <th>SKU Image</th>
+                <th>SKU</th>
+                <th>Unit price</th>
+                <th>Q.ty</th>
+                <th>Total</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="clayer-shopping-bag-items-container"></tbody>
+            <template id="clayer-shopping-bag-item-template">
+              <tr>
+                <td>
+                  <img
+                    class="clayer-shopping-bag-item-image"
+                    alt="A sport grey hoodie sweatshirt"
+                  />
+                </td>
+                <td class="clayer-shopping-bag-item-name"></td>
+                <td class="clayer-shopping-bag-item-unit-amount"></td>
+                <td class="clayer-shopping-bag-item-qty-container">
+                  <input type="number" max="100" />
+                  <span
+                    class="
+                      clayer-shopping-bag-item-availability-message-container
+                    "
+                  ></span>
+                </td>
+                <td class="clayer-shopping-bag-item-total-amount"></td>
+                <td>
+                  <a href="#" class="clayer-shopping-bag-item-remove">❌</a>
+                </td>
+              </tr>
+            </template>
+          </table>
+
+          <table class="table is-fullwidth">
+            <tr>
+              <td>Subtotal</td>
+              <td class="clayer-shopping-bag-subtotal"></td>
+            </tr>
+            <tr>
+              <td>Shipping</td>
+              <td class="clayer-shopping-bag-shipping"></td>
+            </tr>
+            <tr>
+              <td>Payment</td>
+              <td class="clayer-shopping-bag-payment"></td>
+            </tr>
+            <tr>
+              <td>Discount</td>
+              <td class="clayer-shopping-bag-discount"></td>
+            </tr>
+            <tr>
+              <td>Taxes</td>
+              <td class="clayer-shopping-bag-taxes"></td>
+            </tr>
+            <tr>
+              <td>Total</td>
+              <td class="clayer-shopping-bag-total"></td>
+            </tr>
+          </table>
+
+          <!-- Checkout -->
+          <a href="#" class="button is-success clayer-shopping-bag-checkout"
+            >Proceed to checkout</a
+          >
         </div>
       </div>
-
-      <!-- Availability message templates -->
-
-      <template id="clayer-availability-message-available-template">
-        <p>
-          Available in
-          <span class="clayer-availability-message-available-min-days"></span>-
-          <span class="clayer-availability-message-available-max-days"></span> days with
-          <span class="clayer-availability-message-available-shipping-method-name"></span>
-          (<span class="clayer-availability-message-available-shipping-method-price"></span>)
-        </p>
-      </template>
-      <template id="clayer-availability-message-unavailable-template">
-        <p class="has-text-danger">The selected SKU is not available.</p>
-      </template>
-
-      <!-- Shopping bag -->
-
-      <h2 class="title">
-        Shopping bag
-      </h2>
-      <p class="subtitle">
-        Your shopping bag contains <b><span class="clayer-shopping-bag-items-count">0</span></b> item(s) worth <b><span class="clayer-shopping-bag-total"></span></b>
-        <a href="#" class="clayer-shopping-bag-toggle">toggle</a>
-      </p>
-
-      <div id="clayer-shopping-bag-container">
-        <table class="table is-fullwidth">
-          <thead>
-            <tr>
-              <th>SKU</th>
-              <th>Unit price</th>
-              <th>Q.ty</th>
-              <th>Total</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody id="clayer-shopping-bag-items-container">
-          </tbody>
-          <template id="clayer-shopping-bag-item-template">
-            <tr>
-              <td class="clayer-shopping-bag-item-name"></td>
-              <td class="clayer-shopping-bag-item-unit-amount"></td>
-              <td class="clayer-shopping-bag-item-qty-container">
-                <input type="number" max="100" />
-                <span class="clayer-shopping-bag-item-availability-message-container"></span>
-              </td>
-              <td class="clayer-shopping-bag-item-total-amount"></td>
-              <td>
-                <a href="#" class="clayer-shopping-bag-item-remove">❌</a>
-              </td>
-            </tr>
-          </template>
-        </table>
-
-        <table class="table is-fullwidth">
-          <tr>
-            <td>Subtotal</td>
-            <td class="clayer-shopping-bag-subtotal"></td>
-          </tr>
-          <tr>
-            <td>Shipping</td>
-            <td class="clayer-shopping-bag-shipping"></td>
-          </tr>
-          <tr>
-            <td>Payment</td>
-            <td class="clayer-shopping-bag-payment"></td>
-          </tr>
-          <tr>
-            <td>Discount</td>
-            <td class="clayer-shopping-bag-discount"></td>
-          </tr>
-          <tr>
-            <td>Taxes</td>
-            <td class="clayer-shopping-bag-taxes"></td>
-          </tr>
-          <tr>
-            <td>Total</td>
-            <td class="clayer-shopping-bag-total"></td>
-          </tr>
-        </table>
-
-        <!-- Checkout -->
-        <a href="#" class="button is-success clayer-shopping-bag-checkout">Proceed to checkout</a>
-      </div>
-
-    </div>
-  </section>
+    </section>
 
     <!-- Config -->
-    <div id="clayer-config"
-    data-base-url="https://static-commerce-demo-2.commercelayer.io"
-    data-cache="true"
-    data-client-id="Drpx2wWfGbqAOZA8f1d8NstKFHkel-J8EMhVEDTgNFg"
-    data-market-id="4442"
-    data-country-code="US"
-    data-language-code="en"
-    data-dev-settings-debug="true"
-    data-dev-settings-console="true"
-    data-dev-settings-trace="true"
-  >
-  </div>
+    <div
+      id="clayer-config"
+      data-base-url="https://static-commerce-demo-2.commercelayer.io"
+      data-cache="true"
+      data-client-id="Drpx2wWfGbqAOZA8f1d8NstKFHkel-J8EMhVEDTgNFg"
+      data-market-id="4442"
+      data-country-code="US"
+      data-language-code="en"
+      data-cart-url="https://example.com/cart"
+      data-return-url="https://example.com/return"
+      data-privacy-url="https://example.com/privacy"
+      data-terms-url="https://example.com/terms"
+      data-dev-settings-debug="true"
+      data-dev-settings-console="true"
+      data-dev-settings-trace="true"
+    ></div>
 
-  <!-- JS Library -->
-  <script type="text/javascript" src="./dist/commercelayer.min.js"></script>
+    <!-- JS Library -->
+    <script type="text/javascript" src="./dist/commercelayer.min.js"></script>
   </body>
 </html>

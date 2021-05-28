@@ -59,16 +59,6 @@ const getVariants = () => {
       .all()
       .then((r) => {
         updateVariants(r.toArray(), true);
-        if (r.hasNextPage()) {
-          r.nextPage().then((n) => {
-            updateVariants(n.toArray(), false);
-          });
-        }
-        if (r.hasPrevPage()) {
-          r.prevPage().then((p) => {
-            updateVariants(p.toArray(), false);
-          });
-        }
         document.dispatchEvent(new Event("clayer-variants-ready"));
       });
   }
@@ -92,11 +82,6 @@ const getVariantsQuantity = () => {
       .all()
       .then((r) => {
         updateVariantsQuantity(r.toArray());
-        if (r.hasNextPage()) {
-          r.nextPage().then((n) => {
-            updateVariantsQuantity(r.toArray());
-          });
-        }
         document.dispatchEvent(new Event("clayer-variants-quantity-ready"));
       });
   }
@@ -118,16 +103,6 @@ const getAddToBags = () => {
       .all()
       .then((r) => {
         updateAddToBags(r.toArray());
-        if (r.hasNextPage()) {
-          r.nextPage().then((n) => {
-            updateAddToBags(r.toArray());
-          });
-        }
-        if (r.hasPrevPage()) {
-          r.prevPage().then((p) => {
-            updateAddToBags(r.toArray());
-          });
-        }
         document.dispatchEvent(new Event("clayer-add-to-bags-ready"));
       });
   }
