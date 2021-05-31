@@ -77,11 +77,7 @@ Learn more 👉🏾 https://commercelayer.io/why
 
 We'll transform a plain HTML page into an enterprise-grade static commerce website with static content, HTML5, CSS, and Javascript. Finally, we will integrate Commerce Layer for headless commerce capabilities and deploy our application to Netlify using the CLI.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/4f848b77-e168-4203-800c-a695d947543c/deploy-status)](https://app.netlify.com/sites/static-ecommerce-store/deploys)
-
-GIF here
-
-![](./assets/xxx)
+![A GIF of the demo project](./assets/demo.gif)
 
 ## Setup project directory
 
@@ -695,6 +691,8 @@ Now let's push our project to GitHub and deploy to Netlify. Everytime you push a
 6. Configure your settings and ensure your publish directory is set to `/` unless otherwise.
 7. Click the **Deploy site** button to continue and you're done!
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4f848b77-e168-4203-800c-a695d947543c/deploy-status)](https://app.netlify.com/sites/static-ecommerce-store/deploys)
+
 ## Deploy to Netlify using the CLI
 
 1. Install Netlify CLI globally with the command below:
@@ -736,6 +734,7 @@ We developed an [open source checkout application](https://github.com/commercela
 - [Commerce Layer Core Concepts](https://commercelayer.io/docs/core-concepts)
 - [Commerce Layer Data Model](https://commercelayer.io/docs/data-model)
 - [Commerce Layer React components](https://github.com/commercelayer/commercelayer-react-components)
+- [Commerce Layer JS Drop-in Library](https://github.com/commercelayer/commercelayer-js-dropin)
 - [Commerce Layer Open Source Projects](https://github.com/commercelayer)
 - [Using data attributes](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes)
 - [HTMLOrForeignElement.dataset](https://developer.mozilla.org/en-US/docs/Web/API/HTMLOrForeignElement/dataset)
