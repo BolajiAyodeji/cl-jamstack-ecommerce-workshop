@@ -340,10 +340,6 @@ Here we will add some content to the page, like store title, product name, descr
       href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"
     />
     <link rel="stylesheet" href="./css/custom.css" />
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
-    ></script>
     <link
       rel="icon"
       href="https://data.commercelayer.app/assets/images/favicons/favicon.ico"
@@ -352,7 +348,13 @@ Here we will add some content to the page, like store title, product name, descr
 
   <body>
     <section class="section">
-      <div class="container"></div>
+      <h1 class="store-name">Commerce Layer Store</h1>
+      <hr />
+      <div class="container">
+        .
+        .
+        .
+      </div>
     </section>
   </body>
 </html>
@@ -373,6 +375,16 @@ Here we will add some content to the page, like store title, product name, descr
 .clayer-availability-message-container {
   padding: 10px 0;
 }
+.store-name {
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  border: 2px #000;
+}
+.bold {
+  font-weight: bold;
+}
 #clayer-shopping-bag-container {
   display: none;
 }
@@ -385,6 +397,8 @@ Here we will add some content to the page, like store title, product name, descr
 .clayer-add-to-bag-quantity {
   width: 100px;
 }
+
+}
 ```
 
 </details>
@@ -393,8 +407,6 @@ Here we will add some content to the page, like store title, product name, descr
 <summary>Title and product image</summary>
 
 ```html
-<h1 class="title">Commerce LayercStore</h1>
-
 <div class="columns">
   <div class="column">
     <div class="box">
@@ -420,22 +432,22 @@ Here we will add some content to the page, like store title, product name, descr
     <h4 class="title">Sport Grey Unisex Hoodie Sweatshirt with Black Logo</h4>
     <p class="help">SWEETHMUB7B7B7000000</p>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-      pellentesque in neque vitae tincidunt. In gravida eu ipsum non
-      condimentum. Curabitur libero leo, gravida a dictum vestibulum,
-      sollicitudin vel quam.
+      This comfortable hoodie is made of 100% combed ring-spun cotton
+      except for heather black logo, which contains polyester. Our
+      premium Unisex Hoodie Sweatshirt is everything you could ask for: it's warm and cozy, heavyweight, unique, roomy, and it's built to last.
     </p>
     <div class="clayer-price" data-sku-code="SWEETHMUB7B7B7000000">
-      <span class="amount"></span>
+      <span class="bold amount"></span>
       <span class="compare-at-amount"></span>
     </div>
   </div>
 </div>
 ```
+
 </details>
 
 <details>
-<summary>Variants (select) and Add to bag quantity</summary>
+<summary>Select variants and Add to bag quantity</summary>
 
 ```html
 <div class="select">
@@ -446,33 +458,39 @@ Here we will add some content to the page, like store title, product name, descr
     data-add-to-bag-id="add-to-bag"
     data-add-to-bag-quantity-id="add-to-bag-quantity"
   >
-    <option value="" disabled selected>Select variant</option>
+    <option value="" disabled selected>Select your size</option>
     <option
       class="clayer-variant"
       data-sku-code="SWEETHMUB7B7B7000000MXXX"
       data-sku-name="Sport Grey Unisex Hoodie Sweatshirt with Black Logo (M)"
+      data-sku-reference="SWEETHMUB7B7B7000000"
       data-sku-image-url="https://img.commercelayer.io/skus/SWEETHMUB7B7B7000000.png?fm=jpg&q=90"
+      data-price-container-id="price"
       value=""
     >
-      Medium
+      Medium (M)
     </option>
     <option
       class="clayer-variant"
       data-sku-code="SWEETHMUB7B7B7000000LXXX"
       data-sku-name="Sport Grey Unisex Hoodie Sweatshirt with Black Logo (L)"
+      data-sku-reference="SWEETHMUB7B7B7000000"
       data-sku-image-url="https://img.commercelayer.io/skus/SWEETHMUB7B7B7000000.png?fm=jpg&q=90"
+      data-price-container-id="price"
       value=""
     >
-      Large
+      Large (L)
     </option>
     <option
       class="clayer-variant"
       data-sku-code="SWEETHMUB7B7B7000000XLXX"
       data-sku-name="Sport Grey Unisex Hoodie Sweatshirt with Black Logo (XL)"
+      data-sku-reference="SWEETHMUB7B7B7000000"
       data-sku-image-url="https://img.commercelayer.io/skus/SWEETHMUB7B7B7000000.png?fm=jpg&q=90"
+      data-price-container-id="price"
       value=""
     >
-      Extra Large
+      Extra Large (XL)
     </option>
   </select>
 
@@ -481,7 +499,7 @@ Here we will add some content to the page, like store title, product name, descr
     id="add-to-bag-quantity"
     type="number"
     min="1"
-    max="25"
+    max="50"
     class="input clayer-add-to-bag-quantity"
   />
 
@@ -500,7 +518,6 @@ Here we will add some content to the page, like store title, product name, descr
     id="availability-message"
   ></div>
 </div>
-
 ```
 
 </details>
@@ -510,9 +527,9 @@ Here we will add some content to the page, like store title, product name, descr
 
 ```html
 <template id="clayer-availability-message-available-template">
-  <p>
+  <p class="has-text-success">
     Available in
-    <span class="clayer-availability-message-available-min-days"></span>-
+    <span class="clayer-availability-message-available-min-days"></span> -
     <span class="clayer-availability-message-available-max-days"></span> days
     with
     <span
