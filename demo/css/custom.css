@@ -7,6 +7,16 @@
 .clayer-availability-message-container {
   padding: 10px 0;
 }
+.store-name {
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  border: 2px #000;
+}
+.bold {
+  font-weight: bold;
+}
 #clayer-shopping-bag-container {
   display: none;
 }

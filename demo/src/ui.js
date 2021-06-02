@@ -23,9 +23,8 @@ export const updatePrice = (sku, priceContainerId) => {
     if (priceAmount) {
       priceAmount.innerHTML = price.formattedAmount;
     }
-    const priceCompareAmount = priceContainer.querySelector(
-      ".compare-at-amount"
-    );
+    const priceCompareAmount =
+      priceContainer.querySelector(".compare-at-amount");
     if (priceCompareAmount) {
       if (price.compareAtAmountCents > price.amountCents) {
         priceCompareAmount.innerHTML = price.formattedCompareAtAmount;
@@ -140,16 +139,17 @@ export const updateAvailabilityMessage = (
   }
 };
 export const displayAvailableMessage = (container, stockLevel) => {
-  const dlt = _.first(stockLevel.delivery_lead_times);
+  const dlt = _.first(stockLevel.deliveryLeadTimes);
   const qty = stockLevel.quantity;
   const minDays = dlt ? dlt.min.days : "";
   const maxDays = dlt ? dlt.max.days : "";
   const minHours = dlt ? dlt.min.hours : "";
   const maxHours = dlt ? dlt.max.hours : "";
-  const shippingMethodName = dlt ? dlt.shipping_method.name : "";
+  const shippingMethodName = dlt ? dlt.shippingMethod.name : "";
   const shippingMethodPrice = dlt
-    ? dlt.shipping_method.formatted_price_amount
+    ? dlt.shippingMethod.formattedPriceAmount
     : "";
+
   if (container) {
     const template = document.querySelector(
       "#clayer-availability-message-available-template"

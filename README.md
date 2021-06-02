@@ -323,6 +323,8 @@ export default config;
 
 ### Add static product page
 
+Here we will add some content to the page, like store title, product name, description, image, and variant.
+
 <details>
 <summary>HTML Boilerplate</summary>
 

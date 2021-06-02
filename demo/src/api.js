@@ -23,7 +23,7 @@ import {
   displayUnavailableMessage,
   clearShoppingBag,
 } from "./ui";
-import * as _ from 'lodash'
+import * as _ from "lodash";
 
 const getPrices = () => {
   const prices = document.querySelectorAll(".clayer-price");
@@ -290,9 +290,10 @@ const updateShoppingBagItems = (order) => {
               const maxQty =
                 shoppingBagItemQtyContainer.dataset["maxQty"] || 50;
               const minQty = shoppingBagItemQtyContainer.dataset["minQty"] || 1;
-              const availabilityMessageContainer = shoppingBagItemQtyContainer.querySelector(
-                ".clayer-shopping-bag-item-availability-message-container"
-              );
+              const availabilityMessageContainer =
+                shoppingBagItemQtyContainer.querySelector(
+                  ".clayer-shopping-bag-item-availability-message-container"
+                );
               if (!inputNumber) {
                 const qtySelect = document.createElement("select");
                 if (lineItem.itemType === "gift_cards") {
