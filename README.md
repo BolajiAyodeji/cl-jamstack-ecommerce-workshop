@@ -6,26 +6,29 @@ Digital commerce has changed, and there is an increasing demand for faster and k
 
 ## Table of content
 
-1. [Prerequisites]()
-2. [Workshop goals]()
-3. [A quick introduction to Jamstack]()
-4. [A quick introduction to headless commerce]()
-5. [A quick introduction to Commerce Layer]()
-6. [Quick demo of what we'll build]()
-7. [Setup project directory]()
-8. [Install required packages]()
-9. [Setup Webpack]()
-10. [Setup Commerce Layer developer account]()
-11. [Setup Commerce Layer CLI]()
-12. [Seed organization with test data using the CLI]()
-13. [Build product page structure]()
-14. [Setup required configuration]()
-15. [Add staic product page]()
-16. [Commerce Layer JavaScript SDK]()
-17. [Commerce Layer JavaScript Auth]()
-18. [Integrating Commerce Layer]()
-19. [Conclusion]()
-20. [Useful resources]()
+1. [Prerequisites](#prerequisites)
+2. [Workshop goals](#workshop-goals)
+3. [A quick introduction to Jamstack](#a-quick-introduction-to-jamstack)
+4. [A quick introduction to headless commerce](#a-quick-introduction-to-headless-commerce)
+5. [A quick introduction to Commerce Layer](#a-quick-introduction-to-commerce-layer)
+6. [Quick demo of what we'll build](#quick-demo-of-what-well-build)
+7. [Setup project directory](#setup-project-directory)
+8. [Install required packages](#install-required-packages)
+9. [Setup Webpack](#setup-webpack)
+10. [Setup Commerce Layer developer account](#setup-commerce-layer-developer-account)
+11. [Setup Commerce Layer CLI](#setup-commerce-layer-cli)
+12. [Seed organization with test data using the CLI](#seed-organization-with-test-data-using-the-cli)
+13. [Build product page structure](#build-product-page-structure)
+14. [Setup required configuration](#setup-required-configuration)
+15. [Add staic product page](#add-static-product-page)
+16. [Commerce Layer JavaScript SDK](#commerce-layer-javascript-sdk)
+17. [Commerce Layer JavaScript Auth](#commerce-layer-javascript-auth)
+18. [Integrating Commerce Layer](#integrating-commerce-layer)
+19. [Bonus: Place an order via the Commerce Layer CLI](#bonus-place-an-order-via-the-commerce-layer-cli)
+20. [Continous Deployment on Netlify](#continous-deployment-on-netlify)
+21. [Deploy to Netlify using the CLI](#deploy-to-netlify-using-the-cli)
+22. [Conclusion](#conclusion)
+23. [Useful resources](#useful-resources)
 
 ---
 
@@ -679,6 +682,10 @@ An order can consist of a customer, line items (SKUs, cost of shipping method, c
 
 Now let's integrate Commerce Layer into our static product page for headless commerce capabilities. Details and live coding to be done in the live workshop.
 
+## Bonus: Place an order via the Commerce Layer CLI
+
+Since this workshop doesn't cover how to checkout your shopping bag and actually place the order, let's place the order completely using the Commerce Layer CLI in a few steps. Click [here](https://gist.github.com/silviorelli/93424c7e0483780dc5c51fe7a3d215c1) for the step-by-step guide.
+
 ## Continous Deployment on Netlify
 
 Now let's push our project to GitHub and deploy it to Netlify. Every time you push any change to GitHub, Netlify will run your build and re-deploy the repository again. You can follow the steps below or [watch this video](https://egghead.io/lessons/egghead-deploy-a-site-to-netlify-from-git) to set up continuous deployment on Netlify.
@@ -714,10 +721,6 @@ netlify init
 ```
 
 Learn more about the Netlify CLI from this [comprehensive getting started guide](https://docs.netlify.com/cli/get-started/).
-
-## Bonus: Place an order via the Commerce Layer CLI
-
-Since this workshop doesn't cover how to checkout your shopping bag and actually place the order, let's place the order completely using the Commerce Layer CLI in a few steps. Click [here](https://gist.github.com/silviorelli/93424c7e0483780dc5c51fe7a3d215c1) for the step-by-step guide.
 
 ## Conclusion
 
