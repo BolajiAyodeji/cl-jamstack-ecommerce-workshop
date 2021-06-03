@@ -697,9 +697,9 @@ import {
 
 ## Integrating Commerce Layer
 
-An order can consist of a customer, line items (SKUs, cost of shipping method, cost of payment method, taxes, or gift cards), a billing address, a shipping address, discount(s) calculated from active promotions, redeemed gift card(s), a payment method, and a payment source type. You should [read this guide](https://commercelayer.io/docs/data-model/anatomy-of-an-order) to learn more about the anatomy of an order.
+An order can consist of a customer, line items (SKUs, cost of shipping method, cost of payment method, taxes, or gift cards), a billing address, a shipping address, discount(s) calculated from active promotions, redeemed gift card(s), a payment method, and a payment source type. You should [read this guide](https://commercelayer.io/docs/data-model/anatomy-of-an-order) to learn more about the anatomy of an order and check out the Commerce Layer [API reference](https://docs.commercelayer.io/api/).
 
-Now let's integrate Commerce Layer into our static product page for headless commerce capabilities. Details and live coding to be done in the live workshop.
+Now we'll integrate Commerce Layer into our static product page for headless commerce capabilities in the live workshop 👌🏾.
 
 ## Bonus: Place an order via the Commerce Layer CLI
 
