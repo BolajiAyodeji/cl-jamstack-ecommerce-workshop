@@ -697,9 +697,9 @@ import {
 
 ## Integrating Commerce Layer
 
-An order can consist of a customer, line items (SKUs, cost of shipping method, cost of payment method, taxes, or gift cards), a billing address, a shipping address, discount(s) calculated from active promotions, redeemed gift card(s), a payment method, and a payment source type. You should [read this guide](https://commercelayer.io/docs/data-model/anatomy-of-an-order) to learn more about the anatomy of an order and check out the Commerce Layer [API reference](https://docs.commercelayer.io/api/).
+An order can consist of a customer, line items (SKUs, cost of shipping method, cost of payment method, taxes, or gift cards), a billing address, a shipping address, discount(s) calculated from active promotions, redeemed gift card(s), a payment method, and a payment source type. You should [read this guide](https://commercelayer.io/docs/data-model/anatomy-of-an-order) to learn more about the anatomy of an order and check out the Commerce Layer [API reference](https://docs.commercelayer.io/api). Also, check out the Commerce Layer [data model](https://commercelayer.io/docs/data-model) for an overview of the most relevant API entities, their mutual relationships, and common usage (including E-R diagrams).
 
-Now we'll integrate Commerce Layer into our static product page for headless commerce capabilities in the live workshop 👌🏾.
+Now we'll integrate Commerce Layer into our static product page for headless commerce capabilities in the live workshop. You can check out the [complete demo](https://github.com/BolajiAyodeji/cl-jamstack-ecommerce-workshop/tree/master/demo) here to follow along or setup at your own pace.
 
 ## Bonus: Place an order via the Commerce Layer CLI
 
